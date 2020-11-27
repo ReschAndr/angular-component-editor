@@ -3,6 +3,7 @@
   "displayName": "angular-component-editor",
   "description": "todo",
   "version": "0.0.1",
+  "publisher": "mvp-angular",
   "engines": {
     "vscode": "^1.51.0"
   },
@@ -47,5 +48,20 @@
     "vscode-test": "^1.4.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "release": {
+		"branches": "master",
+		"verifyConditions": [
+			"@semantic-release/github"
+		],
+		"publish": [
+			"@semantic-release/github"
+		],
+		"success": [
+			"@semantic-release/github"
+		],
+		"fail": [
+			"@semantic-release/github"
+		]
+	}
 }
