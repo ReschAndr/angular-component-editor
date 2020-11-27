@@ -2,6 +2,7 @@
   "name": "angular-component-editor",
   "displayName": "angular-component-editor",
   "description": "todo",
+  "private":true,
   "version": "0.0.1",
   "publisher": "mvp-angular",
   "engines": {
