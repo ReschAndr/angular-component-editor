@@ -13,6 +13,10 @@
     "type": "git",
     "url": "https://github.com/mvp-angular/angular-component-editor"
   },
+  "bugs": {
+    "url": "https://github.com/mvp-angular/angular-component-editor/issues"
+  },
+  "homepage": "https://github.com/mvp-angular/angular-component-editor/blob/master/README.md",
   "keywords": [
     "angular",
     "keybinding",
