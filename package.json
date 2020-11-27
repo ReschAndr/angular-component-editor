@@ -42,7 +42,7 @@
       }
     ],
     "configuration": {
-      "title": "Angular Split Configuration",
+      "title": "Angular Component Editor Configuration",
       "type": "object",
       "properties": {
         "angular-component-editor.enable.template": {
@@ -62,7 +62,7 @@
         },
         "angular-component-editor.enable.spec": {
           "type": "boolean",
-          "default": false,
+          "default": true,
           "description": "Whether the spec file should be included when split viewing the component files"
         },
         "angular-component-editor.files.template": {
@@ -96,24 +96,24 @@
           ],
           "description": "The list of file extensions to try and open for the component specification (checks in order)"
         },
-        "angular-component-editor.location.template": {
+        "angular-component-editor.locations.template": {
           "type": "integer",
           "default": 2,
           "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
         },
-        "angular-component-editor.location.script": {
+        "angular-component-editor.locations.script": {
           "type": "integer",
           "default": 1,
           "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
         },
-        "angular-component-editor.location.style": {
-          "type": "integer",
-          "default": 3,
-          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
-        },
-        "angular-component-editor.location.spec": {
+        "angular-component-editor.locations.style": {
           "type": "integer",
           "default": 4,
+          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        },
+        "angular-component-editor.locations.spec": {
+          "type": "integer",
+          "default": 3,
           "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
         }
       }
