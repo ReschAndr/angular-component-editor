@@ -2,26 +2,122 @@
   "name": "angular-component-editor",
   "displayName": "angular-component-editor",
   "description": "todo",
-  "private":true,
+  "private": true,
   "version": "0.0.1",
   "publisher": "mvp-angular",
   "engines": {
     "vscode": "^1.51.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvp-angular/angular-component-editor"
+  },
+  "keywords": [
+    "angular",
+    "keybinding",
+    "keybindings",
+    "multi-root ready",
+    "split",
+    "vscode"
+  ],
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:angular-component-editor.helloWorld"
+    "onCommand:angular-component-editor.execute"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "angular-component-editor.helloWorld",
-        "title": "Hello World"
+        "command": "angular-component-editor.execute",
+        "title": "Angular Component Editor: Open in Split View"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+        "command": "angular-component-editor.execute",
+        "key": "strg+shift+o",
+        "mac": "shift+alt+s"
+      }
+    ],
+    "configuration": {
+      "title": "Angular Split Configuration",
+      "type": "object",
+      "properties": {
+        "angular-component-editor.enable.template": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether the template file should be included when split viewing the component files"
+        },
+        "angular-component-editor.enable.script": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether the script file should be included when split viewing the component files"
+        },
+        "angular-component-editor.enable.style": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether the stylesheet file should be included when split viewing the component files"
+        },
+        "angular-component-editor.enable.spec": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether the spec file should be included when split viewing the component files"
+        },
+        "angular-component-editor.files.template": {
+          "type": "array",
+          "default": [
+            "html"
+          ],
+          "description": "The list of file extensions to try and open for the component template (checks in order)"
+        },
+        "angular-component-editor.files.script": {
+          "type": "array",
+          "default": [
+            "ts"
+          ],
+          "description": "The list of file extensions to try and open for the component script (checks in order)"
+        },
+        "angular-component-editor.files.style": {
+          "type": "array",
+          "default": [
+            "css",
+            "scss",
+            "sass",
+            "less"
+          ],
+          "description": "The list of file extensions to try and open for the component stylesheet (checks in order)"
+        },
+        "angular-component-editor.files.spec": {
+          "type": "array",
+          "default": [
+            "spec.ts"
+          ],
+          "description": "The list of file extensions to try and open for the component specification (checks in order)"
+        },
+        "angular-component-editor.location.template": {
+          "type": "integer",
+          "default": 2,
+          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        },
+        "angular-component-editor.location.script": {
+          "type": "integer",
+          "default": 1,
+          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        },
+        "angular-component-editor.location.style": {
+          "type": "integer",
+          "default": 3,
+          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        },
+        "angular-component-editor.location.spec": {
+          "type": "integer",
+          "default": 4,
+          "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -51,18 +147,18 @@
     "webpack-cli": "^3.3.12"
   },
   "release": {
-		"branches": "master",
-		"verifyConditions": [
-			"@semantic-release/github"
-		],
-		"publish": [
-			"@semantic-release/github"
-		],
-		"success": [
-			"@semantic-release/github"
-		],
-		"fail": [
-			"@semantic-release/github"
-		]
-	}
+    "branches": "master",
+    "verifyConditions": [
+      "@semantic-release/github"
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ],
+    "success": [
+      "@semantic-release/github"
+    ],
+    "fail": [
+      "@semantic-release/github"
+    ]
+  }
 }

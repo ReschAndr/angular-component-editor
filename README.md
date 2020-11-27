@@ -88,7 +88,7 @@ enum ViewColumn{
 
 | Command | Description | Binding |
 | --- | --- | --- |
-| `angular-component-editor.execute` | Execute the split action | `Alt + S` (`Shift + Alt + S` on Mac) |
+| `angular-component-editor.execute` | Execute the split action | `Strg + Shift + O` (`Shift + Alt + S` on Mac) |
 
 ## Known Issues
 
