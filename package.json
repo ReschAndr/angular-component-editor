@@ -125,6 +125,11 @@
           "type": "integer",
           "default": 3,
           "description": "In which tab the file should be opended (available options: https://code.visualstudio.com/api/references/vscode-api#ViewColumn)"
+        },
+        "angular-component-editor.saveOnDocumentClose": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether or not to save a file before closing it"
         }
       }
     }

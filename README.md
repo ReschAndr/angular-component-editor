@@ -27,6 +27,7 @@ You can also configure which files you wish to open, as well as the file extensi
 | `angular-component-editor.script` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
 | `angular-component-editor.style` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
 | `angular-component-editor.spec` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
+| `angular-component-editor.saveOnDocumentClose` | Whether or not to save a file before closing it | `true`|
 
 
 ### ViewColumn
