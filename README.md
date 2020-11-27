@@ -1,65 +1,95 @@
-# angular-component-editor README
+# Angular Component Editor
 
-This is the README for your extension "angular-component-editor". After writing up a brief description, we recommend including the following sections.
+[![Visual Studio Code Marketplace](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/chifilly.angular-component-editor.svg?style=popout)](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-component-editor)
+
+## Based on
+This extension is based on [Angular Split](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-split). All I did, was add an option to customize in which tab a filetype should be opened.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+An extension that allows you to easily open the corresponding Angular Component files (template, script, stylesheet and spec files) side-by-side with a single key binding.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+You can also configure which files you wish to open, as well as the file extensions to look for when attempting to split.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+| Setting | Description | Default |
+| --- | --- | --- |
+| `angular-component-editor.enable.template` | Whether template file should be included when split viewing the component files | `true` |
+| `angular-component-editor.enable.script` | Whether script file should be included when split viewing the component files | `true` |
+| `angular-component-editor.enable.style` | Whether stylesheet file should be included when split viewing the component files | `true` |
+| `angular-component-editor.enable.spec` | Whether spec file should be included when split viewing the component files | `false` |
+| `angular-component-editor.files.template` | The list of file extensions to try and open for the component template | `["html"]` |
+| `angular-component-editor.files.script` | The list of file extensions to try and open for the component script | `["ts"]` |
+| `angular-component-editor.files.style` | The list of file extensions to try and open for the component stylesheet | `["css", "scss", "sass", "less"]` |
+| `angular-component-editor.files.spec` | The list of file extensions to try and open for the component specification | `["spec.ts"]` |
+| `angular-component-editor.template` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
+| `angular-component-editor.script` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
+| `angular-component-editor.style` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
+| `angular-component-editor.spec` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
 
-For example:
 
-This extension contributes the following settings:
+### ViewColumn
+[Official Documentation from VS-Code](https://code.visualstudio.com/api/references/vscode-api#ViewColumn)
+```typescript
+enum ViewColumn{
+    /**
+     * A *symbolic* editor column representing the currently active column. This value
+     * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+     * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Active`.
+     */
+    Active = -1,
+    /**
+     * A *symbolic* editor column representing the column to the side of the active one. This value
+     * can be used when opening editors, but the *resolved* [viewColumn](#TextEditor.viewColumn)-value
+     * of editors will always be `One`, `Two`, `Three`,... or `undefined` but never `Beside`.
+     */
+    Beside = -2,
+    /**
+     * The first editor column.
+     */
+    One = 1,
+    /**
+     * The second editor column.
+     */
+    Two = 2,
+    /**
+     * The third editor column.
+     */
+    Three = 3,
+    /**
+     * The fourth editor column.
+     */
+    Four = 4,
+    /**
+     * The fifth editor column.
+     */
+    Five = 5,
+    /**
+     * The sixth editor column.
+     */
+    Six = 6,
+    /**
+     * The seventh editor column.
+     */
+    Seven = 7,
+    /**
+     * The eighth editor column.
+     */
+    Eight = 8,
+    /**
+     * The ninth editor column.
+     */
+    Nine = 9
+}
+        ```
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+## Key Bindings
+
+| Command | Description | Binding |
+| --- | --- | --- |
+| `angular-component-editor.execute` | Execute the split action | `Alt + S` (`Shift + Alt + S` on Mac) |
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+None
