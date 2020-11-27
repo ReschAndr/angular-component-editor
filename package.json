@@ -5,6 +5,7 @@
   "private": true,
   "version": "0.1.1",
   "publisher": "mvp-angular",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.51.0"
   },
