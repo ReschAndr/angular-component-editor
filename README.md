@@ -1,6 +1,6 @@
 # Angular Component Editor
 
-![.github/workflows/ci.yml](https://github.com/mvp-angular/angular-component-editor/workflows/.github/workflows/ci.yml/badge.svg?branch=master&event=deployment)
+![.github/workflows/ci.yml](https://github.com/mvp-angular/angular-component-editor/workflows/.github/workflows/ci.yml/badge.svg)
 
 ## Based on
 This extension is based on [Angular Split](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-split). All I did, was add an option to customize in which tab a filetype should be opened.

@@ -3,7 +3,7 @@
   "displayName": "angular-component-editor",
   "description": "open all files of an angular component with a simple shortcut!",
   "private": true,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "mvp-angular",
   "icon": "images/icon.png",
   "license": "MIT",
