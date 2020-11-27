@@ -1,6 +1,6 @@
 # Angular Component Editor
 
-[![Visual Studio Code Marketplace](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/chifilly.angular-component-editor.svg?style=popout)](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-component-editor)
+![.github/workflows/ci.yml](https://github.com/mvp-angular/angular-component-editor/workflows/.github/workflows/ci.yml/badge.svg?branch=master&event=deployment)
 
 ## Based on
 This extension is based on [Angular Split](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-split). All I did, was add an option to customize in which tab a filetype should be opened.
