@@ -6,6 +6,7 @@
   "version": "0.1.2",
   "publisher": "mvp-angular",
   "icon": "images/icon.png",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.51.0"
   },
