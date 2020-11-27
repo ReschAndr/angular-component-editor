@@ -3,7 +3,7 @@
   "displayName": "angular-component-editor",
   "description": "todo",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "mvp-angular",
   "engines": {
     "vscode": "^1.51.0"
