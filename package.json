@@ -1,7 +1,7 @@
 {
   "name": "angular-component-editor",
   "displayName": "angular-component-editor",
-  "description": "todo",
+  "description": "open all files of an angular component with a simple shortcut!",
   "private": true,
   "version": "0.1.1",
   "publisher": "mvp-angular",

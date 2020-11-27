@@ -93,3 +93,9 @@ enum ViewColumn{
 ## Known Issues
 
 None
+<br/>
+<br/>
+<br/>
+# Planned Features
+
+- close all files of an component with one shortcut
