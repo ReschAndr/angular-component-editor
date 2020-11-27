@@ -39,6 +39,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.RESCHANDR_GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
       - name: Vscode release plugin
         uses: JCofman/vscodeaction@master
