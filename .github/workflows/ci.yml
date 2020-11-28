@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Automated Version Bump
-        uses: phips28/gh-action-bump-version@latest
+        uses: phips28/gh-action-bump-version@v8.0.18
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
