@@ -23,10 +23,10 @@ You can also configure which files you wish to open, as well as the file extensi
 | `angular-component-editor.files.script` | The list of file extensions to try and open for the component script | `["ts"]` |
 | `angular-component-editor.files.style` | The list of file extensions to try and open for the component stylesheet | `["css", "scss", "sass", "less"]` |
 | `angular-component-editor.files.spec` | The list of file extensions to try and open for the component specification | `["spec.ts"]` |
-| `angular-component-editor.template` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
-| `angular-component-editor.script` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
-| `angular-component-editor.style` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
-| `angular-component-editor.spec` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `-2`|
+| `angular-component-editor.template` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `2`|
+| `angular-component-editor.script` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `1`|
+| `angular-component-editor.style` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `4`|
+| `angular-component-editor.spec` | In which tab the file should be opended (available options: see [ViewColumn](###ViewColumn)) | `3`|
 
 
 ### ViewColumn
