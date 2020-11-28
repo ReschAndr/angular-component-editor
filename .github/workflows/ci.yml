@@ -30,10 +30,10 @@ jobs:
     # needs: test
     runs-on: ubuntu-18.04
     steps:
-      - name: Automated Version Bump
-        uses: phips28/gh-action-bump-version@master
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@latest
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
