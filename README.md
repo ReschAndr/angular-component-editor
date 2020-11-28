@@ -1,8 +1,9 @@
 # Angular Component Editor
 
-![https://github.com/mvp-angular/angular-component-editor](https://github.com/mvp-angular/angular-component-editor/workflows/.github/workflows/ci.yml/badge.svg)
-![https://marketplace.visualstudio.com/items?itemName=mvp-angular.angular-component-editor](https://vsmarketplacebadge.apphb.com/version/mvp-angular.angular-component-editor.svg)
-![https://marketplace.visualstudio.com/items?itemName=mvp-angular.angular-component-editor](https://vsmarketplacebadge.apphb.com/downloads/mvp-angular.angular-component-editor.svg)
+[![Source Code](https://github.com/mvp-angular/angular-component-editor/workflows/.github/workflows/ci.yml/badge.svg)](https://github.com/mvp-angular/angular-component-editor)
+[![Visual Studio Code Marketplace](https://vsmarketplacebadge.apphb.com/version/mvp-angular.angular-component-editor.svg)](https://marketplace.visualstudio.com/items?itemName=mvp-angular.angular-component-editor)
+[![Visual Studio Code Marketplace](https://vsmarketplacebadge.apphb.com/version/mvp-angular.angular-component-editor.svg)](https://marketplace.visualstudio.com/items?itemName=mvp-angular.angular-component-editor)
+
 ## Based on
 This extension is based on [Angular Split](https://marketplace.visualstudio.com/items?itemName=chifilly.angular-split). All I did, was add an option to customize in which tab a filetype should be opened.
 
